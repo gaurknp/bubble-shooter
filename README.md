@@ -20,3 +20,5 @@ along with this program.  If not, see http://www.gnu.org/licenses/.
 ## Interior Factory Software Starter
 A complete Python starter app (AutoCAD quantity extractor + BOM + production planner + inventory tracker + dashboard/report) is included in `interior_factory_software.py`.
 See setup and EXE packaging steps in `INTERIOR_FACTORY_SOFTWARE.md`.
+
+To build a Windows executable quickly, run `build_exe.bat` (see `INTERIOR_FACTORY_SOFTWARE.md`).

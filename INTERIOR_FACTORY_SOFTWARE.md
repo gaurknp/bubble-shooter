@@ -33,14 +33,34 @@ Edge Band 2mm,120,m
 
 ## Build EXE (Windows)
 
+### Option A: one-command build script
+
+1. Open **Command Prompt** in this project folder.
+2. Run:
+
+```bat
+build_exe.bat
+```
+
+This installs `pyinstaller` automatically (if missing) and builds:
+
+- `dist\InteriorFactoryStarter.exe`
+
+### Option B: manual PyInstaller command
+
 ```bash
 pip install pyinstaller
-pyinstaller --noconfirm --onefile --windowed --name InteriorFactoryStarter interior_factory_software.py
+pyinstaller --noconfirm --clean --onefile --windowed --name InteriorFactoryStarter interior_factory_software.py
 ```
 
 Output executable:
 
 - `dist/InteriorFactoryStarter.exe`
+
+### If Windows blocks the EXE
+
+- Right-click EXE -> **Properties** -> **Unblock** (if shown).
+- Or build in a normal writable folder like `C:\Projects\...`.
 
 ## Data storage
 
